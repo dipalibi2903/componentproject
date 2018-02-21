@@ -1,0 +1,12 @@
+<div class="card card-block">
+  <h4 class="card-title">
+  	{{data.punchLine}}
+  </h4>
+  <p class="card-text"
+     [hidden]="data.isToShowAns">{{data.punchAns}}</p>
+  <a (click)="data.showAns()"
+     class="btn btn-warning">Tell Me
+  </a>
+  <a class="btn btn-danger" (click)="deleteJoke(data)">Delete
+  </a>  
+</div>
